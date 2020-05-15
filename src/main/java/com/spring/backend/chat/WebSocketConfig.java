@@ -20,7 +20,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
-        //Configuracion para los endopoints
+        //Configuracion para subscribe los endopoints
         registry.enableSimpleBroker("/chat/");
         //Configuracion para el publish
         registry.setApplicationDestinationPrefixes("/app");
